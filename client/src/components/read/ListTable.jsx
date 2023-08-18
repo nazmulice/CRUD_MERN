@@ -17,7 +17,6 @@ const ListTable = () => {
   }, [id]);
   console.log(dataList);
 
-
   //delete data
   const deleteItem = (id) => {
     Swal.fire({
@@ -33,7 +32,6 @@ const ListTable = () => {
         Delete(id).then((deleteResult) => {
           if (deleteResult === true) {
             errorToast("Deleted successfully!");
-            // If the item was deleted successfully, update your state or perform any other necessary actions
             setID(id);
           } else {
             errorToast("Something went wrong!");
@@ -79,7 +77,7 @@ const ListTable = () => {
                       <img
                         width={56}
                         height={56}
-                        className="rounded-pill img-fluid"
+                        className="rounded-pill"
                         src={`${productImg}`}
                         alt="img"
                       />
@@ -120,3 +118,7 @@ const ListTable = () => {
 };
 
 export default ListTable;
+
+
+
+

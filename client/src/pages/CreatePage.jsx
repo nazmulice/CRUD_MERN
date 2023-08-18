@@ -1,13 +1,13 @@
 
-import CreateForm from "../components/create/CreateForm";
-//import FormCreate from "../components/create/FormCreate";
+//import CreateForm from "../components/create/CreateForm";
+import FormCreate from "../components/create/FormCreate";
 
 const CreatePage = () => {
     return (
         <div>
         
-            <CreateForm />
-            {/* <FormCreate /> */}
+            {/* <CreateForm /> */}
+            <FormCreate />
         </div>
     );
 };

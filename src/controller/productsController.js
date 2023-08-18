@@ -11,14 +11,7 @@ exports.createProduct = async (req, res) => {
       totalPrice,
     } = req.body;
 
-    const newProduct = await ProductsModel.create({
-      productName,
-      productCode,
-      productImg,
-      unitPrice,
-      quantity,
-      totalPrice,
-    });
+    const newProduct = await ProductsModel.create(req.body);
 
     res.status(200).json({
       success: true,
@@ -31,7 +24,6 @@ exports.createProduct = async (req, res) => {
     });
   }
 };
-
 exports.getAllProduct = async (req, res) => {
   try {
     const products = await ProductsModel.find();
