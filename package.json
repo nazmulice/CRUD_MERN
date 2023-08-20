@@ -21,7 +21,7 @@
     "helmet": "^7.0.0",
     "hpp": "^0.2.3",
     "jsonwebtoken": "^9.0.1",
-    "mongoose": "^7.4.2",
+    "mongoose": "^6.10.1",
     "mongoose-express-sanitizer": "^2.0.1",
     "nodemon": "^3.0.1"
   }
